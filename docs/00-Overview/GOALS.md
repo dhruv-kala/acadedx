@@ -1,254 +1,479 @@
 # Acadedx Goals
 
-**Document Version:** 1.0.0
-
-**Status:** Approved
-
-**Last Updated:** July 2026
-
-**Owner:** Digital Global Information Systems (DGIS)
+**Document Version:** 1.1.0  
+**Status:** Approved  
+**Last Updated:** July 2026  
+**Owner:** Product Management  
+**Company:** Digital Global Information Systems (DGIS)
 
 ---
 
 # Purpose
 
-This document defines the strategic goals of Acadedx. It establishes measurable objectives that guide product development, engineering priorities, business growth, and user success.
+This document defines the strategic goals for Acadedx.
 
-Every roadmap item should contribute toward one or more of these goals.
+The goals provide measurable direction for product planning, engineering execution, AI development, business growth, user experience, and operational readiness.
+
+Every roadmap item should contribute to at least one goal defined in this document.
 
 ---
 
-# Goal Hierarchy
+# Goal Philosophy
 
-Acadedx goals are divided into six categories:
+Acadedx should be ambitious in architecture but disciplined in execution.
 
-1. Business Goals
+The MVP should remain focused on students, parents, teachers, and schools.
+
+The platform architecture must remain ready for future expansion into organizations, multiple institutions, coaching institutes, academies, colleges, universities, and enterprise education customers.
+
+The product goal is not to build everything at once.
+
+The product goal is to build the correct foundation and release value incrementally.
+
+---
+
+# Platform Goal
+
+Build an AI-first education platform that supports the following hierarchy:
+
+```text
+Platform
+    ↓
+Organization
+    ↓
+Institution
+    ↓
+Academic Structure
+    ↓
+Teachers / Parents / Students
+    ↓
+AI Learning Engine
+```
+
+In the MVP:
+
+- One organization may have one institution.
+- The primary institution type is School.
+- Multi-institution management is not required in the first release.
+
+Long term:
+
+- One organization may manage multiple institutions.
+- Institutions may include schools, academies, coaching institutes, colleges, universities, and training centers.
+
+---
+
+# Goal Categories
+
+Acadedx goals are divided into the following categories:
+
+1. Learning Goals
 2. Product Goals
-3. User Experience Goals
-4. Engineering Goals
-5. Artificial Intelligence Goals
-6. Operational Goals
+3. Platform Goals
+4. Business Goals
+5. AI Goals
+6. User Experience Goals
+7. Engineering Goals
+8. Operational Goals
 
 ---
 
-# Business Goals
+# 1. Learning Goals
 
-## Short-Term (Year 1)
+Acadedx must improve real learning outcomes.
 
-- Launch Version 1.0 successfully.
-- Acquire the first 1,000 registered users.
-- Validate product-market fit.
-- Build a stable subscription model.
-- Establish the Acadedx brand in the education sector.
+## Goals
 
----
+- Help students understand concepts instead of copying answers.
+- Improve homework completion quality.
+- Increase regular study habits.
+- Improve quiz performance over time.
+- Identify weak topics accurately.
+- Recommend personalized practice.
+- Support revision before exams.
+- Build long-term concept mastery.
 
-## Mid-Term (Years 2–3)
+## Success Indicators
 
-- Reach 100,000 active students.
-- Launch Android and iOS applications.
-- Partner with schools and coaching institutes.
-- Expand support for multiple curricula and languages.
-- Introduce AI-powered teacher tools.
-
----
-
-## Long-Term (Years 4–5)
-
-- Serve learners globally.
-- Become a trusted AI learning platform.
-- Support educational institutions at scale.
-- Expand into higher education and professional learning.
-- Build a sustainable SaaS business with recurring revenue.
+- Higher quiz accuracy after using homework explanations.
+- Increased worksheet completion.
+- Improved Learning Mastery Score.
+- Increased study streaks.
+- Reduction in repeated mistakes.
+- More students completing recommended revision activities.
 
 ---
 
-# Product Goals
+# 2. Product Goals
 
-The product should:
+Acadedx must become a complete AI learning companion.
 
-- Help students understand concepts.
-- Provide personalized learning experiences.
-- Improve learning efficiency.
-- Reduce dependence on rote memorization.
-- Encourage regular study habits.
-- Support teachers with AI-assisted workflows.
-- Give parents meaningful progress insights.
+## MVP Product Goals
 
----
+- Launch AI Homework Solver.
+- Launch OCR-based question extraction.
+- Launch AI Tutor.
+- Launch Notes Generator.
+- Launch Quiz Generator.
+- Launch Worksheet Generator.
+- Launch Study Planner.
+- Launch Student Dashboard.
+- Launch basic Parent Dashboard.
+- Launch basic Teacher Workspace.
+- Launch basic Institution support for schools.
 
-# User Experience Goals
+## Future Product Goals
 
-The platform should be:
-
-- Easy to learn.
-- Easy to navigate.
-- Fast.
-- Mobile-friendly.
-- Accessible.
-- Consistent across devices.
-- Visually clean.
-- Free from unnecessary complexity.
-
----
-
-# Engineering Goals
-
-The engineering team should build a platform that is:
-
-- Secure.
-- Scalable.
-- Reliable.
-- Modular.
-- Maintainable.
-- Observable.
-- Well documented.
-- Testable.
+- Launch Organization Management.
+- Launch multi-institution support.
+- Launch advanced Teacher Workspace.
+- Launch Institution Analytics.
+- Launch Organization Analytics.
+- Launch AI Operations Console.
+- Launch Educational Marketplace.
+- Launch enterprise integrations.
 
 ---
 
-# Artificial Intelligence Goals
+# 3. Platform Goals
 
-The AI platform should:
+The platform must support both B2C and B2B education.
 
-- Deliver accurate educational responses.
-- Explain concepts clearly.
-- Personalize explanations based on learner level.
-- Generate meaningful practice content.
-- Recommend learning paths.
-- Detect weak concepts.
-- Improve continuously using feedback.
+## MVP Platform Goals
 
----
+- Support individual students.
+- Support parent-child relationships.
+- Support teacher-student relationships.
+- Support one institution per organization.
+- Support institution-level users.
+- Support institution-level analytics.
+- Support institution-level subscription and billing.
 
-# Operational Goals
+## Future Platform Goals
 
-Operations should ensure:
-
-- High platform availability.
-- Reliable deployments.
-- Fast incident response.
-- Continuous monitoring.
-- Regular security reviews.
-- Frequent product improvements.
-
----
-
-# Success Metrics
-
-The following metrics will be tracked.
-
-## Product Metrics
-
-- Monthly Active Users (MAU)
-- Daily Active Users (DAU)
-- User Retention
-- Session Duration
-- Feature Adoption
-- Homework Solved
-- Quizzes Generated
-- Notes Created
+- Support multiple institutions per organization.
+- Support centralized organization billing.
+- Support organization-level branding.
+- Support organization-level administration.
+- Support organization-level analytics.
+- Support multi-region deployment.
+- Support multiple currencies.
+- Support multiple curricula.
+- Support multiple languages.
 
 ---
 
-## Learning Metrics
+# 4. Business Goals
 
-- Concept Mastery Rate
-- Quiz Accuracy
-- Worksheet Completion Rate
-- Study Streak
-- Learning Time
-- Improvement Rate
+Acadedx must become a sustainable education SaaS business.
+
+## Year 1 Goals
+
+- Launch MVP.
+- Acquire early student users.
+- Validate AI Homework Solver usage.
+- Validate parent and teacher interest.
+- Validate pricing assumptions.
+- Launch free and paid plans.
+- Build initial school pilot program.
+
+## Years 2–3 Goals
+
+- Expand into schools and coaching institutes.
+- Launch institution subscriptions.
+- Improve AI personalization.
+- Launch teacher productivity tools.
+- Support multiple curricula.
+- Launch mobile applications.
+- Grow recurring revenue.
+
+## Years 4–5 Goals
+
+- Support multi-institution organizations.
+- Expand internationally.
+- Serve education groups and enterprise customers.
+- Launch marketplace and API capabilities.
+- Build Acadedx as a globally trusted AI education platform.
 
 ---
 
-## Business Metrics
+# 5. AI Goals
 
-- New Registrations
-- Paid Subscribers
-- Conversion Rate
-- Customer Retention
-- Customer Lifetime Value (CLV)
-- Monthly Recurring Revenue (MRR)
+AI must be used responsibly and meaningfully.
+
+## Goals
+
+- Provide accurate educational explanations.
+- Adapt explanations by grade and learning level.
+- Generate high-quality quizzes, notes, and worksheets.
+- Detect weak topics.
+- Support personalized study plans.
+- Reduce hallucination risk.
+- Support multiple AI providers.
+- Track AI quality and cost.
+
+## AI Quality Targets
+
+- AI response satisfaction above 4.5 out of 5.
+- Homework solution success rate above 90%.
+- OCR accuracy above 95% for printed text.
+- AI hallucination rate below 2% after moderation and validation.
+- AI response time within accepted performance limits.
 
 ---
 
-## Engineering Metrics
+# 6. User Experience Goals
 
-- API Response Time
-- Error Rate
-- Platform Uptime
-- Deployment Frequency
-- Mean Time to Recovery (MTTR)
-- Test Coverage
+Acadedx must be simple enough for students and powerful enough for institutions.
+
+## Goals
+
+- Keep the student experience simple.
+- Reduce unnecessary navigation.
+- Make the dashboard action-oriented.
+- Make AI interactions clear and safe.
+- Use consistent UI patterns.
+- Support mobile-first usage.
+- Support accessibility standards.
+- Avoid enterprise complexity in MVP screens.
+
+## UX Success Indicators
+
+- Students can upload homework within 30 seconds.
+- Students can understand AI explanations without additional help.
+- Parents can understand progress reports quickly.
+- Teachers can create assignments faster than manual workflows.
+- Users can discover the next best action from the dashboard.
+
+---
+
+# 7. Engineering Goals
+
+The platform must be scalable, secure, modular, and maintainable.
+
+## Goals
+
+- Use modular architecture.
+- Avoid hardcoded school-only assumptions.
+- Use Organization and Institution as core platform entities.
+- Keep MVP implementation simple while preserving extensibility.
+- Build API-first services.
+- Maintain strong authentication and authorization.
+- Use feature flags and entitlements.
+- Support observability from the beginning.
+- Maintain automated tests.
+
+## Technical Success Indicators
+
+- Clean module boundaries.
+- No circular dependencies.
+- APIs documented using OpenAPI.
+- Database migrations version-controlled.
+- Unit and integration tests available for critical modules.
+- Common functionality implemented as reusable packages.
+- Secrets never committed to the repository.
+
+---
+
+# 8. Operational Goals
+
+Acadedx must be reliable and manageable.
+
+## Goals
+
+- Provide admin tools for platform operations.
+- Monitor AI usage and cost.
+- Monitor payment and subscription health.
+- Track security events.
+- Support audit logs.
+- Support customer support workflows.
+- Support operational reporting.
+
+## Operational Success Indicators
+
+- Platform uptime above 99.9%.
+- Critical incidents detected quickly.
+- Admin actions audited.
+- Failed payments visible.
+- AI provider issues visible.
+- Support team can identify user issues without developer involvement.
 
 ---
 
 # North Star Metric
 
-The primary measure of success for Acadedx is:
+The primary North Star Metric for Acadedx is:
 
-> **Number of students who achieve measurable learning improvement through consistent platform usage.**
+> **Students achieving measurable learning improvement through consistent platform usage.**
 
-This metric reflects the platform's purpose better than downloads or page views.
+This is better than measuring only downloads, registrations, or AI requests because it reflects the actual mission of the product.
 
 ---
 
-# Objectives and Key Results (OKRs)
+# Supporting Metrics
 
-## Objective 1
+## Learning Metrics
 
-Deliver an exceptional AI learning experience.
+- Learning Mastery Score
+- Quiz Accuracy Improvement
+- Weak Topics Improved
+- Homework Completion Rate
+- Worksheet Completion Rate
+- Study Streak
+- Revision Completion Rate
+
+## Engagement Metrics
+
+- Daily Active Users
+- Weekly Active Users
+- Monthly Active Users
+- Session Duration
+- Feature Adoption
+- Dashboard Return Rate
+
+## AI Metrics
+
+- AI Response Rating
+- AI Accuracy Review Score
+- OCR Success Rate
+- AI Cost Per User
+- AI Response Time
+- Token Usage
+
+## Business Metrics
+
+- Free-to-paid Conversion
+- Monthly Recurring Revenue
+- Annual Recurring Revenue
+- Churn Rate
+- Customer Lifetime Value
+- Customer Acquisition Cost
+- Institution Subscription Count
+
+## Platform Metrics
+
+- Active Organizations
+- Active Institutions
+- Active Teachers
+- Active Students
+- Institution Seat Utilization
+- Organization-level Usage
+
+---
+
+# MVP Goals
+
+The MVP should prove the following:
+
+1. Students find AI homework help useful.
+2. Students understand explanations better than generic AI answers.
+3. Students return for quizzes, notes, and worksheets.
+4. Parents see value in progress insights.
+5. Teachers see value in AI-generated learning material.
+6. Schools see potential in institution-level learning analytics.
+7. The architecture can support future organization and institution expansion.
+
+---
+
+# Out of Scope for MVP Goals
+
+The MVP is not expected to prove:
+
+- Multi-institution organization management.
+- Enterprise SSO.
+- White-label deployments.
+- Marketplace monetization.
+- Global curriculum coverage.
+- University-specific workflows.
+- Government education deployments.
+- Corporate learning workflows.
+- Offline-first learning.
+- Public API business model.
+
+These are future goals, not MVP goals.
+
+---
+
+# Objective and Key Results
+
+## Objective 1: Launch a usable AI learning MVP
 
 ### Key Results
 
-- Average AI response rating above 4.5/5.
-- AI response time under 3 seconds.
-- 90% successful homework solutions.
+- AI Homework Solver released.
+- OCR pipeline released.
+- AI Tutor released.
+- Notes, Quiz, and Worksheet modules released.
+- Student Dashboard released.
+- Basic analytics available.
 
 ---
 
-## Objective 2
-
-Increase student engagement.
+## Objective 2: Improve student learning behavior
 
 ### Key Results
 
-- Average study streak of 7 days.
-- 60% weekly active users.
-- Average session duration above 15 minutes.
+- Average study streak reaches 7 days.
+- At least 50% of active students complete one quiz per week.
+- At least 40% of solved homework generates a follow-up learning action.
+- At least 30% of users return within 7 days.
 
 ---
 
-## Objective 3
-
-Support teachers effectively.
+## Objective 3: Validate monetization
 
 ### Key Results
 
-- Teacher dashboard launched.
-- AI worksheet generation adopted by 70% of teachers.
-- Homework creation time reduced by 50%.
+- Free plan launched.
+- Premium plan launched.
+- Subscription and entitlement system implemented.
+- Free-to-paid conversion measured.
+- AI cost per user tracked.
 
 ---
 
-## Objective 4
-
-Build a reliable platform.
+## Objective 4: Validate institution readiness
 
 ### Key Results
 
-- 99.9% uptime.
-- Critical bugs resolved within 24 hours.
-- Zero critical security incidents.
+- Institution entity implemented.
+- Teacher role implemented.
+- Basic institution dashboard available.
+- Institution-level users supported.
+- Institution-level analytics available.
 
 ---
 
-# Guiding Principle
+## Objective 5: Build future-ready architecture
 
-Every new feature should improve at least one measurable goal defined in this document.
+### Key Results
 
-If a feature does not contribute to a business, product, user, engineering, or AI goal, it should be reconsidered.
+- Organization entity implemented.
+- Institution entity implemented.
+- One-institution-per-organization MVP constraint enforced through business rules.
+- No code assumes only schools exist.
+- Institution type field available.
+- APIs support organization and institution context.
+
+---
+
+# Product Management Rules
+
+Every roadmap item must be classified as one of the following:
+
+- MVP Required
+- Post-MVP Growth
+- Enterprise Future
+- Experimental
+- Deferred
+
+Features should not be added to MVP only because they may be useful later.
+
+The constraint here is execution focus.
+
+A future-ready data model is valuable.
+
+A bloated MVP is dangerous.
 
 ---
 
@@ -256,10 +481,11 @@ If a feature does not contribute to a business, product, user, engineering, or A
 
 This document should be reviewed:
 
-- Quarterly for business goals.
-- Monthly for product metrics.
-- Before every major product release.
-- After significant user feedback.
+- Before every major roadmap update.
+- Before MVP development begins.
+- After MVP user feedback.
+- Before adding institution or organization-level features.
+- Quarterly after launch.
 
 ---
 
@@ -269,5 +495,6 @@ This document should be reviewed:
 - VISION.md
 - MISSION.md
 - SUCCESS_METRICS.md
+- PRODUCT_PRINCIPLES.md
 - PRD.md
 - ROADMAP.md

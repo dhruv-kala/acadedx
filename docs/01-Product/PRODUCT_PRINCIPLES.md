@@ -1,282 +1,560 @@
 # Acadedx Product Principles
 
-**Document Version:** 1.0.0
-
-**Status:** Approved
-
-**Last Updated:** July 2026
-
-**Owner:** Product Management
+**Document Version:** 1.1.0  
+**Status:** Approved  
+**Last Updated:** July 2026  
+**Owner:** Product Management  
+**Company:** Digital Global Information Systems (DGIS)
 
 ---
 
 # Purpose
 
-This document defines the core principles that guide every product decision made for Acadedx.
+This document defines the product principles for Acadedx.
 
-These principles are the foundation of the platform and must be followed by Product Managers, Designers, Engineers, AI Engineers, QA Engineers, and Business Teams.
+These principles guide product strategy, user experience, AI behavior, engineering decisions, feature prioritization, and roadmap planning.
 
-Every feature, workflow, screen, API, and AI interaction must align with these principles.
+Every feature, workflow, screen, API, AI interaction, and administrative capability should follow these principles.
 
 ---
 
 # Product Philosophy
 
-Acadedx exists to improve learning.
+Acadedx exists to improve learning outcomes.
 
-We do not build features because they are trendy.
+The product must not become a collection of disconnected AI tools.
 
-We build features because they help students learn more effectively.
+Every feature should support one or more of the following:
 
-If a feature does not improve the learning experience, it should not be included.
+- Help students understand better.
+- Help students practice effectively.
+- Help parents stay informed.
+- Help teachers teach more efficiently.
+- Help institutions improve academic outcomes.
+- Help organizations manage education operations at scale.
+
+---
+
+# Core Platform Principle
+
+Acadedx should be built as a future-ready education platform.
+
+The product experience in MVP may focus on schools, but the architecture must support the broader platform hierarchy:
+
+```text
+Platform
+    ↓
+Organization
+    ↓
+Institution
+    ↓
+Academic Structure
+    ↓
+Teachers / Parents / Students
+    ↓
+AI Learning Engine
+```
+
+The constraint here is execution focus.
+
+Do not overbuild multi-institution workflows in the MVP.
+
+Do not hardcode assumptions that Acadedx only supports schools.
 
 ---
 
 # Principle 1 — Learning Before Answers
 
-Students should understand concepts before receiving final answers.
+Acadedx must prioritize understanding before final answers.
 
-Whenever possible, Acadedx should:
+The product should:
 
-- Explain the concept.
+- Explain concepts.
 - Break problems into steps.
-- Encourage independent thinking.
-- Provide hints before revealing answers.
-- Offer additional practice.
+- Encourage thinking.
+- Provide hints where appropriate.
+- Generate practice questions.
+- Help students revise weak areas.
 
-Final answers should support learning, not replace it.
+The final answer should support learning, not replace learning.
 
 ---
 
-# Principle 2 — Personalization
+# Principle 2 — Responsible AI
 
-Every learner is unique.
+AI must behave as a learning companion, not a shortcut engine.
 
-The platform should adapt to:
+AI should:
 
-- Grade level
+- Use age-appropriate explanations.
+- Avoid encouraging cheating.
+- Admit uncertainty when needed.
+- Avoid fabricated facts.
+- Explain reasoning.
+- Encourage critical thinking.
+- Respect privacy.
+- Follow content safety rules.
+
+AI should never be positioned as a replacement for teachers.
+
+---
+
+# Principle 3 — Personalization
+
+Acadedx should adapt to each learner.
+
+Personalization should consider:
+
+- Grade
 - Subject
-- Learning speed
-- Preferred language
-- Learning style
-- Previous performance
+- Curriculum
+- Learning history
+- Homework patterns
+- Quiz scores
 - Weak topics
 - Strong topics
+- Study goals
+- Preferred language
+- Learning speed
 
 Personalization should improve over time as more learning data becomes available.
 
 ---
 
-# Principle 3 — Simplicity
+# Principle 4 — Simplicity for MVP
 
-The platform should feel simple regardless of its technical complexity.
+The MVP must remain focused and usable.
 
-Every screen should answer one question:
+Version 1.0 should not attempt to expose every future enterprise capability.
 
-"What is the user trying to accomplish?"
+MVP should focus on:
 
-Anything that does not support that goal should be reconsidered.
+- Students
+- Parents
+- Teachers
+- One institution per organization
+- School as the primary institution type
+- Core AI learning workflows
 
----
-
-# Principle 4 — Consistency
-
-Users should never have to relearn the interface.
-
-Consistent design should include:
-
-- Navigation
-- Buttons
-- Colors
-- Typography
-- Icons
-- Layouts
-- Terminology
-- AI interactions
+The product should avoid unnecessary configuration screens, enterprise-only workflows, and complex administration unless required for the MVP.
 
 ---
 
-# Principle 5 — Accessibility
+# Principle 5 — Future-Ready Domain Model
 
-Education should be available to everyone.
+The product must use flexible domain concepts.
 
-Acadedx should support:
+Use:
 
-- Mobile devices
-- Tablets
-- Desktop
-- Modern browsers
-- Keyboard navigation
-- Screen readers
-- High contrast themes
-- Adjustable text sizes
+- Organization
+- Institution
+- Institution Type
+- Academic Session
+- Grade
+- Section
+- User Role
 
----
+Avoid hardcoding:
 
-# Principle 6 — Trust
+- School-only assumptions
+- One business equals one school
+- One institution type forever
+- One curriculum forever
+- One country forever
 
-Users trust Acadedx with their education.
-
-We must earn and protect that trust.
-
-The platform should provide:
-
-- Accurate information
-- Transparent AI behavior
-- Secure authentication
-- Privacy protection
-- Reliable performance
+This enables future expansion into academies, coaching institutes, colleges, universities, and enterprise education groups.
 
 ---
 
-# Principle 7 — Responsible AI
+# Principle 6 — Organization and Institution Separation
 
-Artificial Intelligence should support learning responsibly.
+Acadedx must clearly separate business ownership from education operations.
 
-AI should:
+## Organization
 
-- Explain reasoning.
-- Admit uncertainty when appropriate.
-- Avoid fabricated facts.
-- Encourage critical thinking.
-- Never encourage cheating.
-- Respect user privacy.
+Represents the business owner, trust, company, education group, franchise, or enterprise customer.
 
----
+Organizations may eventually manage:
 
-# Principle 8 — Continuous Improvement
+- Multiple institutions
+- Central billing
+- Shared branding
+- Organization-level analytics
+- Licensing
+- Administrators
+- Enterprise settings
 
-Acadedx should evolve through:
+## Institution
 
-- User feedback
-- Learning analytics
-- Educational research
-- AI improvements
-- Performance monitoring
+Represents the actual education unit where learning happens.
 
-Every release should improve the product.
+Institution types may include:
 
----
+- School
+- Academy
+- Coaching Institute
+- College
+- University
+- Training Centre
+- Online Academy
 
-# Principle 9 — Performance
-
-Fast products create better learning experiences.
-
-Target performance:
-
-- Page load < 2 seconds
-- AI response < 3 seconds
-- API response < 500 ms
-- High platform availability
-
-Performance is a feature.
+In MVP, one organization may operate one institution.
 
 ---
 
-# Principle 10 — Scalability
+# Principle 7 — Teacher Empowerment
 
-Every architectural decision should support future growth.
+Teachers are central to education.
 
-The platform should scale from:
+Acadedx should reduce repetitive work and improve teaching quality.
 
-- Hundreds of users
-- Thousands of users
-- Millions of users
+Teacher-facing features should help with:
 
-without requiring major redesigns.
+- Lesson planning
+- Homework creation
+- Quiz generation
+- Worksheet generation
+- Revision material
+- Student feedback
+- Class analytics
+- Parent communication
 
----
-
-# Principle 11 — Security by Design
-
-Security is not optional.
-
-Every feature must include:
-
-- Authentication
-- Authorization
-- Input validation
-- Encryption
-- Audit logging
-- Secure file handling
-- Rate limiting
+AI should act as a co-teacher, not a replacement teacher.
 
 ---
 
-# Principle 12 — Data-Driven Decisions
+# Principle 8 — Parent Clarity
 
-Product decisions should be based on:
+Parents need meaningful insights, not overwhelming dashboards.
 
-- User research
-- Analytics
-- A/B testing
-- Customer feedback
-- Educational outcomes
+Parent experiences should be:
 
-Assumptions should always be validated.
-
----
-
-# Principle 13 — Teacher-Centric Support
-
-Teachers are partners in education.
-
-Acadedx should reduce repetitive work while allowing teachers to remain in control of learning.
-
----
-
-# Principle 14 — Parent Empowerment
-
-Parents should receive meaningful insights—not overwhelming amounts of data.
-
-Reports should be:
-
-- Clear
+- Simple
 - Actionable
 - Easy to understand
+- Focused on progress
+- Focused on recommended actions
+
+Parents should understand what their child is learning, where help is needed, and what action they can take.
 
 ---
 
-# Principle 15 — Global Readiness
+# Principle 9 — Institution Readiness
 
-Acadedx should be designed for global expansion.
+Acadedx must support institutions from the beginning.
+
+Institution-level features should support:
+
+- Institution administrators
+- Teachers
+- Students
+- Parents
+- Classes
+- Subjects
+- Assignments
+- Analytics
+- Billing
+- Reports
+
+MVP may implement only the minimum required institution functionality.
+
+The architecture must still support institution-level isolation and permissions.
+
+---
+
+# Principle 10 — Multi-Tenant Data Isolation
+
+Acadedx must protect data across organizations and institutions.
+
+Users must only access data they are authorized to view.
+
+Rules:
+
+- Students access their own learning data.
+- Parents access linked children only.
+- Teachers access assigned students and classes only.
+- Institution administrators access their institution only.
+- Organization administrators access their organization only.
+- Platform administrators require audited access.
+
+No organization or institution should ever access another organization's or institution's data.
+
+---
+
+# Principle 11 — Trust, Privacy, and Safety
+
+Acadedx handles sensitive education data.
+
+The product must protect:
+
+- Student profiles
+- Parent relationships
+- Teacher records
+- Institution data
+- AI conversations
+- Homework uploads
+- Learning analytics
+- Billing data
+
+Privacy and security must be designed into every feature, not added later.
+
+---
+
+# Principle 12 — Action-Oriented Dashboards
+
+Dashboards should not only show data.
+
+They should help users decide what to do next.
+
+A student dashboard should answer:
+
+- What should I study today?
+- What is pending?
+- Where am I weak?
+- What should I practice next?
+
+A teacher dashboard should answer:
+
+- Which students need help?
+- What assignments need attention?
+- What topic should be revised?
+
+An institution dashboard should answer:
+
+- Are students engaged?
+- Are teachers using the platform?
+- Which subjects need attention?
+
+---
+
+# Principle 13 — Measurement Before Scale
+
+Acadedx should scale based on evidence.
+
+Before expanding into broader institution types or enterprise markets, the product should validate:
+
+- Student engagement
+- Learning improvement
+- AI usefulness
+- Parent value
+- Teacher productivity
+- Institution adoption
+- Subscription conversion
+- AI cost sustainability
+
+Do not scale complexity before validating usage.
+
+---
+
+# Principle 14 — Modular Product Growth
+
+Acadedx should grow module by module.
+
+Core product domains:
+
+- Identity
+- Organizations
+- Institutions
+- Learning
+- AI
+- Analytics
+- Commerce
+- Notifications
+- Administration
+- Support
+- Content
+
+Each module should have clear ownership, responsibilities, data boundaries, APIs, and acceptance criteria.
+
+---
+
+# Principle 15 — Entitlements Over Plan Checks
+
+Premium access should be controlled through feature entitlements, not hardcoded plan names.
+
+Avoid logic such as:
+
+```text
+if user.plan == "Student Pro"
+```
+
+Prefer:
+
+```text
+if user.hasFeature("homework.unlimited")
+```
+
+This enables flexible packaging, add-ons, regional pricing, institutional plans, scholarships, and future AI credit systems.
+
+---
+
+# Principle 16 — AI Cost Awareness
+
+AI features must be designed with cost visibility.
+
+Every AI workflow should track:
+
+- Provider
+- Model
+- Tokens
+- Cost
+- Latency
+- Success rate
+- User satisfaction
+- Prompt version
+
+AI cost must be monitored from MVP to avoid unsustainable economics.
+
+---
+
+# Principle 17 — Accessibility
+
+Acadedx should be usable by as many learners as possible.
+
+The product should support:
+
+- Keyboard navigation
+- Screen readers
+- Responsive design
+- Readable typography
+- High contrast support
+- Clear form labels
+- Error messages that are easy to understand
+
+Accessibility is part of product quality.
+
+---
+
+# Principle 18 — Global Readiness
+
+Acadedx should be designed for future international use.
 
 The platform should support:
 
 - Multiple languages
-- Multiple curricula
-- Multiple time zones
 - Multiple currencies
-- Regional educational standards
+- Multiple time zones
+- Regional curricula
+- Regional payment methods
+- Local compliance requirements
+
+MVP does not need to implement all regions, but architecture should avoid blocking future expansion.
+
+---
+
+# Principle 19 — Consistent User Experience
+
+The same action should behave consistently across the platform.
+
+Consistency applies to:
+
+- Navigation
+- Buttons
+- Forms
+- Dialogs
+- Empty states
+- Error states
+- Loading states
+- AI interactions
+- Notifications
+- Permissions
+- Terminology
+
+Users should not need to relearn the interface in every module.
+
+---
+
+# Principle 20 — Build for Learning Loops
+
+Every core feature should contribute to a learning loop.
+
+```text
+Understand
+    ↓
+Practice
+    ↓
+Assess
+    ↓
+Improve
+    ↓
+Revise
+    ↓
+Master
+```
+
+Examples:
+
+- Homework should lead to explanation, quiz, notes, or worksheet.
+- Quiz mistakes should generate revision and practice.
+- Weak topics should update study plans.
+- Analytics should recommend next actions.
+- Notifications should drive meaningful learning activities.
 
 ---
 
 # Decision Framework
 
-Before approving any feature, answer the following questions:
+Before approving a feature, answer:
 
-1. Does it improve learning?
-2. Does it align with our mission?
-3. Is it simple to use?
-4. Is it secure?
-5. Is it scalable?
-6. Is it accessible?
-7. Can success be measured?
-8. Does it create long-term value?
+1. Does it improve learning outcomes?
+2. Does it support students, parents, teachers, institutions, or organizations?
+3. Does it align with responsible AI usage?
+4. Does it preserve MVP simplicity?
+5. Does it support future Organization and Institution architecture?
+6. Does it avoid hardcoded school-only assumptions?
+7. Does it protect privacy and data isolation?
+8. Can success be measured?
+9. Is the feature economically sustainable?
+10. Can it scale without major redesign?
 
-If the answer to any of these questions is "No", the feature should be reviewed before implementation.
+Features that fail these checks should be redesigned, deferred, or rejected.
+
+---
+
+# MVP Product Principles
+
+For Version 1.0:
+
+- Build school-focused workflows.
+- Support one institution per organization.
+- Keep organization management mostly internal or minimal.
+- Implement Institution as a flexible domain entity.
+- Avoid enterprise UI complexity.
+- Focus on the core learning loop.
+- Measure learning improvement and AI cost.
+- Use entitlements for feature access.
+- Build modular APIs and data models.
+
+---
+
+# Anti-Principles
+
+Acadedx should avoid:
+
+- Building every future feature in the MVP.
+- Treating AI as only a chatbot.
+- Treating schools as the only possible institution type.
+- Mixing organization billing with institution operations incorrectly.
+- Creating dashboards full of vanity metrics.
+- Allowing users to access unauthorized data.
+- Hardcoding subscription plan logic.
+- Ignoring AI cost.
+- Generating answers without educational value.
+- Designing only for one country or curriculum.
 
 ---
 
 # Product Promise
 
-Every interaction within Acadedx should help users:
+Acadedx should help users:
 
 - Learn better
-- Study smarter
+- Teach better
+- Practice smarter
+- Track progress clearly
 - Save time
 - Build confidence
-- Achieve academic success
+- Improve outcomes
 
 ---
 
@@ -288,3 +566,5 @@ Every interaction within Acadedx should help users:
 - GOALS.md
 - SUCCESS_METRICS.md
 - PRD.md
+- FEATURES.md
+- ACCEPTANCE_CRITERIA.md

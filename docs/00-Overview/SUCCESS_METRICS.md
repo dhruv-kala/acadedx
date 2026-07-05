@@ -1,465 +1,1124 @@
 # Acadedx Success Metrics
 
-**Document Version:** 1.0.0
-
-**Status:** Approved
-
-**Last Updated:** July 2026
-
-**Owner:** Product Management
+**Document Version:** 1.1.0  
+**Status:** Approved  
+**Last Updated:** July 2026  
+**Owner:** Product Management  
+**Company:** Digital Global Information Systems (DGIS)
 
 ---
 
 # Purpose
 
-This document defines the Key Performance Indicators (KPIs), North Star Metric, product analytics, engineering metrics, and business measurements used to evaluate the success of Acadedx.
+This document defines the success metrics for Acadedx.
 
-Every feature released should improve one or more of the metrics defined in this document.
+The metrics in this document help Product, Engineering, AI, Business, Design, Operations, and Leadership teams measure whether Acadedx is delivering real learning value and business progress.
+
+Success must not be measured only by registrations, downloads, or AI request volume.
+
+The primary measure of success is whether students improve learning outcomes through consistent platform usage.
 
 ---
 
-# Measurement Principles
+# Measurement Philosophy
 
-Acadedx measures success in five areas:
+Acadedx should measure what matters.
 
-1. Learning Success
-2. User Engagement
-3. Product Adoption
-4. Business Growth
-5. Platform Reliability
+The platform should track:
+
+- Learning improvement
+- Student engagement
+- AI quality
+- Parent visibility
+- Teacher productivity
+- Institution adoption
+- Organization readiness
+- Business sustainability
+- Platform reliability
+- Operational safety
+
+Metrics should support product decisions, not create vanity dashboards.
 
 ---
 
 # North Star Metric
 
-## Students Achieving Learning Progress (SALP)
+## Students Achieving Learning Progress
 
-### Definition
+The North Star Metric is:
 
-The number of unique students who demonstrate measurable improvement in learning over a rolling 30-day period.
+> **Number of students who show measurable learning improvement through consistent Acadedx usage within a rolling 30-day period.**
 
-A student is considered successful if they:
+A student is counted when they meet a defined learning improvement threshold based on:
 
-- Complete learning sessions
-- Improve quiz performance
-- Increase concept mastery
-- Maintain regular study habits
-
----
-
-# Product KPIs
-
-## Daily Active Users (DAU)
-
-Definition
-
-Number of unique users using Acadedx each day.
-
-Target (Year 1)
-
-1,000+
+- Quiz score improvement
+- Weak topic improvement
+- Homework completion
+- Worksheet practice
+- Study streak
+- Revision completion
+- Learning Mastery Score growth
 
 ---
 
-## Monthly Active Users (MAU)
+# Supporting North Star Inputs
 
-Definition
+A student may be considered to have made learning progress when at least three of the following are true during a 30-day period:
 
-Number of unique users using Acadedx in a 30-day period.
+- Completed at least 5 homework solutions.
+- Completed at least 3 quizzes.
+- Improved quiz accuracy by at least 10%.
+- Completed at least 2 worksheets.
+- Improved at least one weak topic.
+- Maintained a study streak of 5 or more days.
+- Completed at least one study plan goal.
+- Increased Learning Mastery Score.
 
-Target
-
-10,000+
-
----
-
-## DAU / MAU Ratio
-
-Definition
-
-Measures user engagement.
-
-Target
-
-40%+
+Exact thresholds may be adjusted after MVP data is collected.
 
 ---
 
-## New User Registrations
+# Metric Categories
 
-Target
+Acadedx tracks metrics across the following categories:
 
-500+ per month during MVP.
-
----
-
-## Returning User Rate
-
-Definition
-
-Percentage of users returning within 7 days.
-
-Target
-
-60%
-
----
-
-# Learning KPIs
-
-## Homework Solved
-
-Tracks
-
-- Questions uploaded
-- Questions solved
-- Average solving time
-
-Target
-
-Growing month over month.
+1. Learning Metrics
+2. Engagement Metrics
+3. AI Quality Metrics
+4. Product Usage Metrics
+5. Parent Metrics
+6. Teacher Metrics
+7. Institution Metrics
+8. Organization Metrics
+9. Business Metrics
+10. Engineering Metrics
+11. Security and Trust Metrics
+12. Support Metrics
 
 ---
 
-## Quiz Completion Rate
+# 1. Learning Metrics
 
-Target
+Learning metrics determine whether Acadedx is helping students improve.
 
-80%
+## Learning Mastery Score
 
----
+Measures the student's overall mastery across subjects, chapters, and topics.
 
-## Concept Mastery Score
+Inputs may include:
 
-Definition
+- Homework solution quality
+- Quiz accuracy
+- Worksheet completion
+- Revision frequency
+- Study consistency
+- AI Tutor interaction quality
 
-Average mastery score across all completed topics.
+Target:
 
-Target
-
-Above 75%
-
----
-
-## Average Study Time
-
-Target
-
-20 minutes per day.
+- MVP baseline only.
+- Improvement targets should be set after real usage data is available.
 
 ---
 
-## Study Streak
+## Quiz Accuracy Improvement
 
-Tracks
+Measures whether students improve over time.
 
-Consecutive days of learning.
+Formula:
 
-Target
+```text
+Current Quiz Accuracy - Previous Quiz Accuracy
+```
 
-Average streak above 7 days.
+Target:
+
+- Positive improvement over 30 days.
 
 ---
 
 ## Weak Topics Improved
 
-Measures
+Measures how many previously weak topics moved to a better mastery level.
 
-Number of weak topics successfully mastered.
+Example levels:
 
----
-
-# AI Performance Metrics
-
-## AI Response Time
-
-Target
-
-Less than 3 seconds.
+- Needs Practice
+- Learning
+- Good
+- Mastered
 
 ---
 
-## AI Accuracy
+## Homework Completion Rate
 
-Measured through:
+Measures percentage of homework workflows successfully completed.
 
-- User feedback
-- Manual evaluation
-- Internal QA
+Formula:
 
-Target
-
-95%
+```text
+Completed Homework / Started Homework
+```
 
 ---
 
-## AI Satisfaction Score
+## Worksheet Completion Rate
 
-Collected after AI interactions.
+Measures whether students practice after receiving explanations.
 
-Target
+Formula:
 
-4.5 / 5
+```text
+Completed Worksheets / Generated Worksheets
+```
+
+---
+
+## Revision Completion Rate
+
+Measures whether students complete recommended revision activities.
+
+---
+
+## Exam Readiness Score
+
+Measures readiness for upcoming exams based on:
+
+- Syllabus coverage
+- Revision completion
+- Quiz accuracy
+- Weak topics remaining
+- Study plan progress
+
+---
+
+# 2. Engagement Metrics
+
+Engagement metrics measure whether users return and continue using the platform.
+
+## Daily Active Users
+
+Unique users active on a given day.
+
+---
+
+## Weekly Active Users
+
+Unique users active during a rolling 7-day period.
+
+---
+
+## Monthly Active Users
+
+Unique users active during a rolling 30-day period.
+
+---
+
+## DAU / MAU Ratio
+
+Measures product stickiness.
+
+Target:
+
+- MVP baseline first.
+- Long-term target should be above 25%.
+- Strong consumer learning products may aim higher.
+
+---
+
+## Study Streak
+
+Measures consecutive days of meaningful learning activity.
+
+Meaningful activities include:
+
+- Homework solved
+- Quiz attempted
+- Worksheet completed
+- Notes reviewed
+- Study task completed
+- AI Tutor session completed
+
+---
+
+## Average Session Duration
+
+Measures average time spent per learning session.
+
+This should be interpreted carefully.
+
+Longer is not always better.
+
+The goal is effective learning, not screen addiction.
+
+---
+
+## Dashboard Return Rate
+
+Measures how frequently users return to the dashboard.
+
+---
+
+# 3. AI Quality Metrics
+
+AI metrics measure accuracy, safety, usefulness, and cost.
+
+## AI Response Satisfaction
+
+User rating after AI interactions.
+
+Target:
+
+```text
+>= 4.5 / 5
+```
+
+---
+
+## Homework Solution Success Rate
+
+Measures the percentage of homework questions successfully processed and answered.
+
+Target:
+
+```text
+>= 90%
+```
+
+---
+
+## AI Explanation Helpfulness
+
+Measures whether the student found the explanation understandable.
+
+Collected through:
+
+- Quick feedback buttons
+- Follow-up behavior
+- Quiz improvement
+- Manual review
 
 ---
 
 ## OCR Accuracy
 
-Target
+Measures accuracy of extracted text from images and PDFs.
 
-98%
+Targets:
+
+- Printed text: >= 95%
+- Handwritten text: baseline during MVP
+- Mathematical expressions: baseline during MVP
 
 ---
 
 ## AI Hallucination Rate
 
-Target
+Measures inaccurate or unsupported AI-generated responses.
 
-Less than 2%
+Target:
+
+```text
+< 2% after moderation and validation
+```
 
 ---
 
-# Business Metrics
+## AI Response Time
+
+Measures latency for AI workflows.
+
+Targets:
+
+- AI Tutor response: under 5 seconds for normal queries.
+- Homework solution: under 15 seconds end-to-end.
+- Notes or quiz generation: under 10 seconds where practical.
+
+---
+
+## AI Cost Per Active User
+
+Measures AI provider cost per active user.
+
+This is critical for subscription pricing and profitability.
+
+---
+
+# 4. Product Usage Metrics
+
+These metrics measure adoption of core features.
+
+## Homework Usage
+
+Track:
+
+- Homework uploaded
+- Homework solved
+- Homework failed
+- Average processing time
+- Follow-up learning actions
+
+---
+
+## Notes Usage
+
+Track:
+
+- Notes generated
+- Notes reviewed
+- Notes exported
+- Notes converted into quiz or worksheet
+
+---
+
+## Quiz Usage
+
+Track:
+
+- Quizzes generated
+- Quizzes attempted
+- Quizzes completed
+- Average score
+- Retry rate
+
+---
+
+## Worksheet Usage
+
+Track:
+
+- Worksheets generated
+- Worksheets downloaded
+- Worksheets completed
+- Worksheets generated from weak topics
+
+---
+
+## Study Planner Usage
+
+Track:
+
+- Study plans created
+- Tasks completed
+- Missed tasks
+- Regenerated plans
+- Exam plans created
+
+---
+
+## AI Tutor Usage
+
+Track:
+
+- Conversations started
+- Conversations completed
+- Follow-up questions
+- Average messages per session
+- Conversation satisfaction
+
+---
+
+# 5. Parent Metrics
+
+Parent metrics measure whether parents receive meaningful value.
+
+## Parent Activation Rate
+
+Percentage of invited parents who create accounts.
+
+---
+
+## Parent Dashboard Usage
+
+Track:
+
+- Dashboard visits
+- Child progress views
+- Weekly report views
+- Notification clicks
+
+---
+
+## Parent Insight Engagement
+
+Measures whether parents act on recommendations.
+
+Examples:
+
+- Opens weak topic alert.
+- Reviews weekly report.
+- Starts conversation with child or teacher.
+- Downloads progress report.
+
+---
+
+# 6. Teacher Metrics
+
+Teacher metrics measure productivity and classroom value.
+
+## Teacher Activation Rate
+
+Percentage of invited teachers who complete onboarding.
+
+---
+
+## Assignment Creation Time
+
+Measures time required to create homework, quiz, or worksheet.
+
+Target:
+
+- Reduce teacher effort compared to manual creation.
+
+---
+
+## AI Tool Adoption
+
+Track teacher usage of:
+
+- AI lesson planning
+- Quiz generation
+- Worksheet generation
+- Assignment creation
+- Student feedback generation
+
+---
+
+## Class Analytics Usage
+
+Measures teacher engagement with student and class performance dashboards.
+
+---
+
+# 7. Institution Metrics
+
+Institution metrics apply to schools in MVP and broader institution types in future.
+
+## Active Institutions
+
+Number of institutions actively using Acadedx.
+
+In MVP, most institutions will be schools.
+
+---
+
+## Institution Activation
+
+An institution is activated when:
+
+- Institution profile is complete.
+- At least one administrator is active.
+- At least one teacher is active.
+- At least five students are active.
+- At least one learning activity is completed.
+
+---
+
+## Institution Seat Utilization
+
+Formula:
+
+```text
+Active Seats / Purchased Seats
+```
+
+---
+
+## Institution Learning Engagement
+
+Measures usage across students and teachers in an institution.
+
+Inputs:
+
+- Active students
+- Active teachers
+- Homework completed
+- Quizzes completed
+- AI usage
+- Reports viewed
+
+---
+
+## Institution Retention
+
+Measures whether institutions continue using Acadedx after onboarding.
+
+---
+
+# 8. Organization Metrics
+
+Organization metrics are future-ready and may be limited in MVP.
+
+## Active Organizations
+
+Number of organizations with at least one active institution.
+
+---
+
+## Institutions Per Organization
+
+Measures organization expansion.
+
+MVP constraint:
+
+```text
+1 institution per organization
+```
+
+Future:
+
+```text
+Multiple institutions per organization
+```
+
+---
+
+## Organization Seat Utilization
+
+Measures total usage across all institutions owned by an organization.
+
+---
+
+## Organization Revenue
+
+Measures revenue at the organization level.
+
+Useful for:
+
+- Education groups
+- Multi-school businesses
+- Enterprise customers
+- Franchise models
+
+---
+
+# 9. Business Metrics
+
+Business metrics measure commercial sustainability.
 
 ## Free Users
 
-Monthly count.
+Total users on free plan.
 
 ---
 
-## Premium Users
+## Paid Users
 
-Monthly count.
-
----
-
-## Conversion Rate
-
-Definition
-
-Free users upgrading to paid plans.
-
-Target
-
-5–10%
+Total users on paid plans.
 
 ---
 
-## Monthly Recurring Revenue (MRR)
+## Free-to-Paid Conversion Rate
 
-Measured monthly.
+Formula:
 
----
-
-## Annual Recurring Revenue (ARR)
-
-Measured yearly.
+```text
+Paid Users / Free Users
+```
 
 ---
 
-## Customer Lifetime Value (CLV)
+## Monthly Recurring Revenue
 
-Tracked continuously.
-
----
-
-## Customer Acquisition Cost (CAC)
-
-Tracked by marketing channel.
+Recurring subscription revenue per month.
 
 ---
 
-# Engineering Metrics
+## Annual Recurring Revenue
+
+Annualized recurring revenue.
+
+---
+
+## Average Revenue Per User
+
+Formula:
+
+```text
+Total Revenue / Active Users
+```
+
+---
+
+## Customer Acquisition Cost
+
+Marketing and sales cost required to acquire a customer.
+
+---
+
+## Customer Lifetime Value
+
+Estimated total revenue from a customer over their lifetime.
+
+---
+
+## Churn Rate
+
+Percentage of users or institutions canceling or not renewing.
+
+---
+
+## AI Gross Margin
+
+Important because AI costs can reduce profitability.
+
+Formula:
+
+```text
+Subscription Revenue - AI Cost - Infrastructure Cost
+```
+
+---
+
+# 10. Engineering Metrics
+
+Engineering metrics measure system quality and maintainability.
 
 ## API Response Time
 
-Target
+Target:
 
-< 500 ms
+```text
+< 500 ms for standard APIs
+```
 
 ---
 
 ## Page Load Time
 
-Target
+Target:
 
-< 2 seconds
+```text
+< 2 seconds for key pages
+```
 
 ---
 
-## Uptime
+## Platform Uptime
 
-Target
+Target:
 
+```text
 99.9%
+```
 
 ---
 
 ## Error Rate
 
-Target
+Target:
 
+```text
 < 1%
-
----
-
-## Crash-Free Sessions
-
-Target
-
-99.5%
+```
 
 ---
 
 ## Deployment Success Rate
 
-Target
+Target:
 
-99%
-
----
-
-# Security Metrics
-
-Track
-
-- Failed login attempts
-- Blocked attacks
-- Suspicious activity
-- Data breaches
-- Security incidents
-
-Goal
-
-Zero critical incidents.
+```text
+>= 95%
+```
 
 ---
 
-# Customer Support Metrics
+## Test Coverage
+
+Targets:
+
+- Critical modules: 90%+
+- Standard modules: 80%+
+- UI components: meaningful coverage for critical flows
+
+---
+
+## Mean Time to Recovery
+
+Measures how quickly incidents are resolved.
+
+---
+
+# 11. Security and Trust Metrics
+
+Security metrics protect students, parents, teachers, institutions, and DGIS.
+
+## Failed Login Attempts
+
+Track suspicious login activity.
+
+---
+
+## Account Lockouts
+
+Track potential brute force attempts or user friction.
+
+---
+
+## Suspicious Activity Events
+
+Examples:
+
+- Unusual login location
+- Excessive API requests
+- Repeated failed payments
+- Unusual AI prompt patterns
+
+---
+
+## Data Access Violations
+
+Target:
+
+```text
+0 critical incidents
+```
+
+---
+
+## Tenant Isolation Incidents
+
+Target:
+
+```text
+0
+```
+
+No organization or institution should ever access another organization's or institution's data.
+
+---
+
+## Content Safety Incidents
+
+Track unsafe AI content, harmful responses, policy violations, and moderation failures.
+
+---
+
+# 12. Support Metrics
+
+Support metrics measure customer experience and operational quality.
 
 ## First Response Time
 
-Target
+Target:
 
-< 2 hours
+```text
+< 2 business hours
+```
 
 ---
 
 ## Resolution Time
 
-Target
+Target:
 
-< 24 hours
+```text
+< 24 business hours for standard issues
+```
 
 ---
 
-## Customer Satisfaction (CSAT)
+## Customer Satisfaction
 
-Target
+Target:
 
-4.5 / 5
+```text
+>= 4.5 / 5
+```
+
+---
+
+## Support Ticket Categories
+
+Track:
+
+- Login issues
+- Payment issues
+- AI quality issues
+- OCR issues
+- Institution onboarding
+- Subscription questions
+- Bug reports
+- Feature requests
 
 ---
 
 # Analytics Events
 
-The following events must be tracked.
+The following events must be captured.
 
-Authentication
+## Authentication Events
 
-- User Registered
-- Login
-- Logout
+- user_registered
+- user_logged_in
+- user_logged_out
+- password_reset_requested
+- password_changed
+- email_verified
 
-Learning
+---
 
-- Homework Uploaded
-- Homework Solved
-- Quiz Started
-- Quiz Completed
-- Notes Generated
-- Worksheet Generated
-- Flashcards Created
+## Learning Events
 
-AI
+- homework_uploaded
+- homework_solved
+- homework_failed
+- ai_tutor_started
+- ai_tutor_message_sent
+- notes_generated
+- quiz_generated
+- quiz_started
+- quiz_completed
+- worksheet_generated
+- worksheet_completed
+- study_plan_created
+- study_task_completed
 
-- AI Chat Started
-- AI Chat Completed
-- AI Feedback Submitted
+---
 
-Subscription
+## Dashboard Events
 
-- Plan Viewed
-- Subscription Started
-- Subscription Renewed
-- Subscription Cancelled
+- dashboard_viewed
+- recommendation_clicked
+- widget_opened
+- quick_action_clicked
 
-Engagement
+---
 
-- Daily Login
-- Study Session Started
-- Study Session Completed
-- Achievement Earned
+## Parent Events
+
+- parent_invited
+- parent_linked_student
+- parent_viewed_report
+- parent_clicked_recommendation
+
+---
+
+## Teacher Events
+
+- teacher_invited
+- teacher_created_assignment
+- teacher_generated_quiz
+- teacher_generated_worksheet
+- teacher_viewed_class_analytics
+
+---
+
+## Institution Events
+
+- institution_created
+- institution_onboarded
+- institution_user_invited
+- institution_dashboard_viewed
+- institution_report_exported
+
+---
+
+## Organization Events
+
+- organization_created
+- organization_admin_invited
+- organization_billing_updated
+- organization_dashboard_viewed
+
+---
+
+## Commerce Events
+
+- plan_viewed
+- trial_started
+- subscription_started
+- subscription_upgraded
+- subscription_downgraded
+- subscription_cancelled
+- payment_successful
+- payment_failed
+- invoice_generated
+
+---
+
+## AI Events
+
+- ai_request_started
+- ai_request_completed
+- ai_request_failed
+- ai_feedback_submitted
+- ai_provider_selected
+- ai_cost_recorded
+- prompt_version_used
 
 ---
 
 # Dashboard Requirements
 
-The Product Dashboard should display:
+Acadedx should support the following dashboards.
 
-- DAU
-- MAU
-- Active Students
-- New Registrations
-- Homework Solved
-- Quiz Completion
-- AI Usage
-- Revenue
-- Conversion Rate
-- Top Features
-- User Retention
-- Platform Health
+## Product Dashboard
+
+Shows:
+
+- Active users
+- Feature adoption
+- Retention
+- Homework solved
+- Quizzes completed
+- Notes generated
+- Worksheets generated
+- Study plans created
+
+---
+
+## Learning Dashboard
+
+Shows:
+
+- Learning Mastery Score
+- Weak topic improvement
+- Quiz accuracy
+- Study streak
+- Revision completion
+- Exam readiness
+
+---
+
+## AI Dashboard
+
+Shows:
+
+- AI requests
+- Provider usage
+- Token usage
+- AI cost
+- Response time
+- Error rate
+- User satisfaction
+- Prompt version performance
+
+---
+
+## Business Dashboard
+
+Shows:
+
+- Free users
+- Paid users
+- MRR
+- ARR
+- Churn
+- Conversion
+- Revenue by plan
+- AI gross margin
+
+---
+
+## Institution Dashboard
+
+Shows:
+
+- Active students
+- Active teachers
+- Homework completion
+- Quiz performance
+- AI usage
+- Seat utilization
+- Learning engagement
+
+---
+
+## Organization Dashboard
+
+Future dashboard showing:
+
+- Institutions owned
+- Organization-wide usage
+- Organization billing
+- Seat utilization
+- Institution comparison
+- Enterprise analytics
+
+---
+
+# Metric Governance
+
+Every metric must have:
+
+- Clear definition
+- Owner
+- Data source
+- Calculation formula
+- Update frequency
+- Dashboard location
+- Privacy classification
+
+Metrics without clear definitions should not be used for major decisions.
+
+---
+
+# Privacy Rules
+
+Analytics must follow privacy-by-design principles.
+
+Rules:
+
+- Do not expose student-level data to unauthorized users.
+- Parents can only view linked children.
+- Teachers can only view assigned students.
+- Institution administrators can only view their institution.
+- Organization administrators can only view institutions under their organization.
+- Platform administrators require audited access.
+- Sensitive AI conversations should not be broadly visible.
+
+---
+
+# MVP Metrics
+
+The MVP must track at minimum:
+
+- Registered users
+- Active students
+- Homework uploaded
+- Homework solved
+- OCR success rate
+- AI Tutor sessions
+- Notes generated
+- Quizzes completed
+- Worksheets generated
+- Study plans created
+- Learning Mastery baseline
+- Free-to-paid conversion
+- AI cost per active user
+- System error rate
+
+---
+
+# Out of Scope for MVP Metrics
+
+The following may be deferred:
+
+- Multi-institution organization comparison
+- Enterprise analytics
+- Marketplace analytics
+- Public API analytics
+- Advanced predictive analytics
+- Career readiness scoring
+- University readiness scoring
 
 ---
 
 # Review Frequency
 
 | Metric Category | Review Frequency |
-|-----------------|-----------------|
-| Learning | Weekly |
-| Product | Weekly |
-| Business | Monthly |
-| Engineering | Daily |
-| Security | Daily |
-| Executive Dashboard | Monthly |
-
----
-
-# Responsibilities
-
-## Product Team
-
-- User engagement
-- Adoption
-- Feature usage
-
-## Engineering Team
-
-- Performance
-- Reliability
-- Stability
-
-## AI Team
-
-- AI quality
-- AI accuracy
-- Personalization
-
-## Business Team
-
-- Revenue
-- Growth
-- Customer acquisition
+|---|---|
+| Learning Metrics | Weekly |
+| Product Metrics | Weekly |
+| AI Metrics | Weekly |
+| Business Metrics | Monthly |
+| Engineering Metrics | Daily |
+| Security Metrics | Daily |
+| Institution Metrics | Weekly |
+| Organization Metrics | Monthly after launch |
+| Executive Metrics | Monthly |
 
 ---
 
@@ -467,18 +1126,26 @@ The Product Dashboard should display:
 
 Acadedx is considered successful when:
 
-- Students consistently improve learning outcomes.
-- Teachers actively use AI-powered tools.
-- Parents trust the platform.
-- Schools adopt Acadedx institution-wide.
-- The platform demonstrates sustainable business growth.
+- Students show measurable learning progress.
+- Students return consistently.
+- AI explanations are rated highly.
+- Parents understand their child's learning progress.
+- Teachers save time using AI tools.
+- Institutions adopt Acadedx for real learning workflows.
+- Subscriptions generate sustainable revenue.
+- AI costs remain commercially viable.
+- The platform maintains strong security and reliability.
+- The architecture supports future organization and institution expansion.
 
 ---
 
 # Related Documents
 
+- PROJECT_OVERVIEW.md
+- VISION.md
+- MISSION.md
 - GOALS.md
-- PRD.md
-- ROADMAP.md
-- AI_ENGINE.md
 - PRODUCT_PRINCIPLES.md
+- PRD.md
+- ANALYTICS.md
+- DATABASE_SCHEMA.md
